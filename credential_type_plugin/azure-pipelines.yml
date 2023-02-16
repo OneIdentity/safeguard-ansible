@@ -83,7 +83,7 @@ steps:
   condition: and(succeeded(), eq(variables.isReleaseBranch, true), eq(variables.isPrerelease, false))
 
 - script: |
-    python3 -m twine upload --verbose --repository SafeguardAnsible --config-file $(PYPIRC_PATH) $(Build.ArtifactStagingDirectory)/dist/*
+    python3 -m twine upload --verbose --config-file $(PYPIRC_PATH) $(Build.ArtifactStagingDirectory)/dist/*
   displayName: Upload release to PyPi OneIdentity
   condition: and(succeeded(), eq(variables.isReleaseBranch, true), eq(variables.isPrerelease, false))
 
