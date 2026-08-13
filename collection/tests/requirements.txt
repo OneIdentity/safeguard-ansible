@@ -1,3 +1,3 @@
-ansible-core>=2.14
+ansible-core>=2.21.3
 pysafeguard>=8,<9
 pytest
