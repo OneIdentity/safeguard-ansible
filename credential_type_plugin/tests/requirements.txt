@@ -1,2 +1,2 @@
-pysafeguard>=8,<9
+pysafeguard>=8.1.0,<9
 pytest
